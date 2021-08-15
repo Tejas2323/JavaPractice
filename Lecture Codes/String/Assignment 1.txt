@@ -1,0 +1,12 @@
+Assignment : try out any five methods of String class
+1) you have to find out default method of String
+2) demonstrate with an example
+
+
+Assignment: Difference between String , StringBuffer and StringBuilder
+
+Study StringBuffer and StringBuilder with a test program
+also demonstrate 5 methods of each buffer/builder with a program
+
+Program that demonstrates speed between StringBuffer and StringBuilder
+write a program to demonstrate processing speed difference buffer n builder
