@@ -3,7 +3,7 @@ class Arraymethod
 {
 public static void main(String args[])
 {
-String a[]={"anik","asif","tanveer"};
+String a[]={"abc","xyz","tez"};
 int b[][]={{1,2,3,4},{4,6,8,}};
 Integer c[]={1,2,3};
 System.out.println(Arrays.toString(a));
