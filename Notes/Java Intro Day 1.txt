@@ -1,0 +1,35 @@
+Java is an object oriented programming language.
+
+In Java we use objects to write a set of instructions to achieve certain target/goal.
+
+Class - Its a blueprint of any program which defines its properties and its functions.
+
+Object - Actual Person that inherits properties of a class in a unique way
+
+
+Features of OOPS
+
+Encapsulation - Binding everything as a single unit (We bind certain class or objects together in one class)
+
+Inheritance - One class Inherit properties of another class and can use it.
+
+Abstraction - Data hiding 
+Giving the required functionality and hiding on how actual implementation is done
+
+Polymorphism - Poly (means) Morphism (forms)
+one name and multiple forms  - like shape 
+
+Assignment
+
+1) Comparision between Java and C++
+2) JVM
+3) Bytecode
+
+What is procedural programming
+
+
+
+
+
+
+

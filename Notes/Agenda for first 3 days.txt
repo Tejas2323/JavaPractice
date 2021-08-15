@@ -1,0 +1,8 @@
+Logic building process
+
+Day 1 - What is computer language. Differences. Instruction components. Compiler vs Interpreter.
+flowchart, pseudocode
+
+Day 2 - Conditional Statements, loops, imp of loops.
+
+Day 3 - Algos and Flowcharts, About Java history and introduction

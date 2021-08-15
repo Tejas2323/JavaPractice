@@ -1,0 +1,57 @@
+Agenda
+What is Java
+Fucntionalities of Java
+Install Java on system
+Process 
+Basic Hello World Program
+
+
+Java Code -> Byte code (Compilation) -> Machine Code (Interpretaion)
+
+What is Java?
+Java is a pure object oriented programming language.
+
+Object like human being, bike, car, etc.
+
+Java provides a functionality known as WORA (Write Once, Run Anywhere).
+It is a platform independent programming language.
+
+Java is mainly used for developing:-
+1)Mobile based applications
+2)Desktop applications
+3)Web based applications
+4)Gaming applications
+5)Cloud based applications
+
+Key features of Java:-
+Java provides various key functionalities like:
+	A very huge library for code optimization
+	Auto memory cleanup process i.e Automatic garbage collection
+	Platform independent (JVM provides virtual env. to run Java programs that makes it platform independent.)
+	Code reusability
+Java is simple
+Portable
+Object oriented -> Inheritance, abstraction, encapsulation, polymorphism
+Secure/Robust
+Multi-threaded (Multiple tasks to share same memory)
+High performance
+Dynamic
+JDBC (An API for connecting Java program with a database)
+
+Key differences between Java and C++
+Java does not support pointer. C++ supports pointer concept.
+Header file is not required. Header file is required.
+It is purely object oriented (OOP) language. It is only an extension of OOP language.
+WORA. WOCA (Write once, complie anywhere)
+Java supports multithreading concept. C++ does not support any built-in function for the same.
+
+
+
+
+
+
+
+
+	
+
+

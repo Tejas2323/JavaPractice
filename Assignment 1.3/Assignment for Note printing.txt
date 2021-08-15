@@ -1,0 +1,20 @@
+Assignment:
+Write the code for atm machine.
+
+Accept the amount to be withdrawn from user, and display the no of notes dispatched by atm:
+
+e.g. if amount is 4800, output:
+
+2 note of 2000
+
+1 note of 500
+
+1 note of 200
+
+1 note of 100
+
+Note: for 1600 (don’t print zero notes)
+
+3 note of 500
+
+1 note of 100

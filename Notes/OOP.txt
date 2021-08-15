@@ -1,0 +1,82 @@
+Concepts of OOP
+
+Inheritance
+It means to take something that is already defined.
+In java, inheritance basically means deriving a class from an existing defined class.
+It is the most important feature of Object Oriented Programming.
+
+Why use Inheritance?
+It increases the reusability purpose of a code.
+Eg: - 
+class Vehicle			class Car
+
+Derived class is known as a child class or subclass.
+Class from which it is being derived is Parent class/ base class.
+
+To inherit the class (Car from Vehicle):
+
+public class Car extends Vehicle {
+}  
+
+
+If you don't want other classes to inherit from a class, use the final keyword.
+
+
+
+Types of Inheritance:
+1) Single Inheritance
+2) Multi level Inheritance
+3) Hierarchichal Inheritance
+4) Multiple Inheritance
+5) Hybrind Inheritance
+
+Single Inheritance
+Class A -> Class B
+
+Multi level Inheritance
+Class A -> Class B-> Class C
+
+Hierarchical Inheritance
+
+		Class A 
+	Class B		Class C
+Class D		Class E		Class F
+
+Multiple Inheritance
+
+Class A		Class B
+	Class C
+
+Note: Java does not support multiple inheritance (Supports in Python)
+
+Hybrid Inheritance
+Single + Multilevel + Hierarchichal
+(Single + Multilevel + Hierarchical + Multiple is not allowed.)
+
+	Class A
+	Class B
+Class C	Class D	Class E
+
+
+Polymorphism (Multiple forms)
+It means that the same method will have different approach.
+(Same method name with different functionalities aka Method overriding)
+
+@Override
+
+There are certian rules to be followed when overriding a method:
+1) The method return type should be same.
+2) The method names should be same.
+3) The list of parameters should be same in both methods.
+4) The access modifier can be increased but not decreased.
+
+Access modifiers (Accessiblity is in descending order)
+Public
+Protected
+Default
+Final
+
+super keyword specifies method or attribute on parent class.
+
+
+

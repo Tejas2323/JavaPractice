@@ -1,0 +1,12 @@
+Access Modi fiers
+
+
+1) Private -- it means that any variable or method classified as private cannot be accessed outisde the particular class
+2)Default -- when we do not specify any access specifier it is termed as default and whatever is default can be accessed within class and within package
+
+package package_name;
+3)Protected -- a protected method or variable can be accessed within package and outisde the package via inheritence
+4)Public -- accessible in all scenarios, outside/inside package/
+
+
+
