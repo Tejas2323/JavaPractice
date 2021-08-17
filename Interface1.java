@@ -11,6 +11,7 @@ class Tez implements Inter1{
 
     @Override
     public void name() {
+        System.out.println("Company name " + company);
         System.out.println("Tejas");
         
     }
@@ -32,7 +33,7 @@ class Tez implements Inter1{
 public class Interface1 {
     public static void main(String[] args) {
         Tez t1 = new Tez();
-
+        
         t1.name();
         t1.id();
         t1.salary();
