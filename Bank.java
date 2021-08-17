@@ -42,6 +42,10 @@ public class Bank {
         b1.name();
         b1.rateofinterest();
 
+        ICICI i1 = new ICICI();
+        i1.name();
+        i1.rateofinterest();
+
         HDFC h1 = new HDFC();
         h1.name();
         h1.rateofinterest();
