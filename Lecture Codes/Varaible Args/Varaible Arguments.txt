@@ -1,0 +1,23 @@
+Varaible arguments
+
+
+Var args --> variable arguments
+
+Var args replaces array since array had limitations
+
+Syntax:
+void disp (datatype... varaible_name){
+
+}
+
+on Main prog
+disp("Hi","Hello"); //Args can be taken any number of times
+
+Assignment
+Print all the chars from the file
+while((i=fin.read())!=-1)
+
+try to save a string using FileOutputStream
+
+
+

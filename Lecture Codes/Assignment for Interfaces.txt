@@ -1,0 +1,3 @@
+Difference between Abstract class and Interfaces
+
+Bank get rate of interest run using Interface concept

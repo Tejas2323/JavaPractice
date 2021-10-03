@@ -1,6 +1,9 @@
 class Arrex{
 
+   
+
 public static void main(String[] args){
+
 
 //Single array
 int arr[] = new int[4];

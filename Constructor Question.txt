@@ -1,0 +1,396 @@
+1) What is a Constructor?
+2) What is Constructor Chaining ? and write a program for constructor chaining.
+3) Can we call sub class constructor from super class constructor?
+4) What happens if you keep a return type for a constructor?
+5) How a no – argument constructor is different from default Constructor?
+6) What are private constructors and where are they used?
+7) When do we need Constructor Overloading?
+8) Do we have destructors in Java?
+9) can we write more then one constructor in one class.
+10) constructor can be overrided or not.
+11) What are the Rules in defining a constructor?
+12) Can we define a method with same name of class?
+13) If we place return type in constructor prototype will it leads to Error?
+14) How compiler and JVM can differentiate constructor and method definitions of both have same class name?
+15) can we declare constructore as private protected.
+16) Is Constructor definition is mandatory in class explicitly?
+17) what is default accessibility modifier of default constructor?
+18) When compiler provides default constructor?
+19) When developer must provide constructor explicitly?
+20) If class has explicit constructor , will it has default constructor?
+21) its possible to define constructor with static keyword.
+22) its possible to define constructor with final keyword.
+23) can we deifne constructor as abstract.
+24) Differences between default constructor and no argument constructor.
+25) can its possible to define constructor insid an interface.
+26) can its possible to declare constructor inside inner class.
+27) what is diffrence between constructor and method.
+28) can we overload constructor write a programs.
+29) Can we use this() and super() in a method?
+30) Can you create an object without using new operator in Java?
+
+
+
+
+
+Mutiple choice Question :
+
+1. What is true about private constructor?
+a) Private constructor ensures only one instance of a class exist at any point of time
+b) Private constructor ensures multiple instances of a class exist at any point of time
+c) Private constructor eases the instantiation of a class
+d) Private constructor allows creating objects in other classes
+
+2. What would be the behaviour if this() and super() used in a method?
+a) Runtime error
+b) Throws exception
+c) compile time error
+d) Runs successfully
+
+3. What is true about constructor?
+a) It can contain return type
+b) It can take any number of parameters
+c) It can have any non access modifiers
+d) Constructor cannot throw an exception
+
+4. Abstract class cannot have a constructor.
+a) True
+b) False
+
+5. What is true about protected constructor?
+a) Protected constructor can be called directly
+b) Protected constructor can only be called using super()
+c) Protected constructor can be used outside package
+d) protected constructor can be instantiated even if child is in a different package
+
+6. What is not the use of “this” keyword in Java?
+a) Passing itself to another method
+b) Calling another constructor in constructor chaining
+c) Referring to the instance variable when local variable has the same name
+d) Passing itself to method of the same class
+
+7. What would be the behaviour if one parameterized constructor is explicitly defined?
+a) Compilation error
+b) Compilation succeeds
+c) Runtime error
+d) Compilation succeeds but at the time of creating object using default constructor, it throws compilation error
+
+8. What would be behaviour if the constructor has a return type?
+a) Compilation error
+b) Runtime error
+c) Compilation and runs successfully
+d) Only String return type is allowed
+
+
+9.Can we define method with same name of class?
+a)Yes
+b)No
+
+
+10. What happens if we add return type to constructor?
+a)Compile time error
+b)Run time Error
+c)JVM treats that as method
+
+
+11.We can declare constructor as private?
+a)True
+b)False
+
+
+12.What is default accessibility modifier of a default constructor
+a)public
+b)private
+c)Same as class accessibility modifier
+d)default
+
+13) Predict the output of following Java program
+class T {
+  int t = 20;
+  T() {
+    t = 40;
+  }
+}
+class Main {
+   public static void main(String args[]) {
+      T t1 = new T();
+      System.out.println(t1.t);
+   }
+}
+
+a) 20
+b)40
+c)Compiler Error
+
+
+14. Is there any compiler error in the below Java program?
+class Point {
+    int m_x, m_y; 
+    public Point(int x, int y) {    m_x = x;    m_y = y;  }
+    public static void main(String args[]) 
+    {
+      Point p = new Point();
+    }
+}
+
+a)Yes
+b)No 
+
+15) Output of following Java program
+class Point {
+  int m_x, m_y;
+   
+  public Point(int x, int y) { m_x = x; m_y = y; }
+  public Point() { this(10, 10); }
+  public int getX() { return m_x; }
+  public int getY() { return m_y; }
+   
+  public static void main(String args[]) {
+    Point p = new Point();
+    System.out.println(p.getX());
+  }
+} 
+
+
+a)10
+b) 0
+c) compile time error.
+
+16)final class Complex {
+    private  double re,  im;
+    public Complex(double re, double im) {
+        this.re = re;
+        this.im = im;
+    }
+    Complex(Complex c)
+    {
+      System.out.println("Copy constructor called");
+      re = c.re;
+      im = c.im;
+    }            
+    public String toString() {
+        return "(" + re + " + " + im + "i)";
+    }            
+}
+class Main {
+    public static void main(String[] args) {
+        Complex c1 = new Complex(10, 15);
+        Complex c2 = new Complex(c1);    
+        Complex c3 = c1;  
+        System.out.println(c2);
+    }
+}
+
+
+
+a) Copy constructor called   (10.0 + 15.0i)
+b) Copy constructor called   (0.0 + 0.0i)
+c) (10.0 + 15.0i)
+d) (0.0 + 0.0i)
+
+17)  
+class Test
+{
+    static int a;
+     
+    static
+    {
+        a = 4;
+        System.out.println ("inside static blockn");
+        System.out.println ("a = " + a);
+    }
+     
+    Test()
+    {
+        System.out.println ("ninside constructorn");
+        a = 10;
+    }
+     
+    public static void func()
+    {
+        a = a + 1;
+        System.out.println ("a = " + a);
+    }
+     
+    public static void main(String[] args)
+    {
+ 
+        Test obj = new Test();
+        obj.func();
+ 
+    }
+}
+
+a)  inside static block
+    a = 4
+    inside constructor
+    a = 11
+b)  Compiler Error
+c)  Run Time Error
+d)  inside static block
+    a = 4
+    inside constructor
+    a = 5
+e)  inside static block
+    a = 10
+    inside constructor
+    a = 11
+
+
+18. What is the return type of Constructors?
+a) int
+b) float
+c) void
+d) none of the mentioned
+
+19. Which keyword is used by the method to refer to the object that invoked it?
+a) import
+b) catch
+c) abstract
+d) this
+
+20. Which of the following is a method having same name as that of its class?
+a) finalize
+b) delete
+c) class
+d) constructor
+
+21. Which operator is used by Java run time implementations to free the memory of an object when it is no longer needed?
+a) delete
+b) free
+c) new
+d) none of the mentioned
+
+22. Which function is used to perform some action when the object is to be destroyed?
+a) finalize()
+b) delete()
+c) main()
+d) none of the mentioned
+
+23. What is the output of this program?
+
+    class box 
+    {
+        int width;
+        int height;
+        int length;
+        int volume;
+        box() 
+        {
+            width = 5;
+            height = 5;
+            length = 6;
+        }
+        void volume() 
+        {
+             volume = width*height*length;
+        } 
+    }    
+    class constructor_output 
+    {
+        public static void main(String args[])
+        {
+            box obj = new box();
+            obj.volume();
+            System.out.println(obj.volume);
+        }
+   }
+a) 100
+b) 150
+c) 200
+d) 250
+
+24. What is the output of this program?
+
+class San
+{
+     San()throws IOException
+     {
+ 
+     } 
+ 
+}
+class Foundry extends San
+{
+     Foundry()
+     {
+ 
+     }
+     public static void main(String[]args)
+     {
+ 
+     }
+}
+a) compile time error
+b) run time error
+c) compile and runs fine
+d) unreported exception java.io.IOException in default constructor
+
+25. What is the output of this program?
+
+    class box 
+    {
+        int width;
+        int height;
+        int length;
+        int volume;
+        void finalize() 
+        {
+            volume = width*height*length;
+            System.out.println(volume);
+        }
+        protected void volume() 
+       {
+            volume = width*height*length;
+            System.out.println(volume);
+       } 
+    }    
+    class Output 
+    { 
+        public static void main(String args[])
+        {
+            box obj = new box();
+            obj.width=5;
+            obj.height=5;
+            obj.length=6;
+            obj.volume();
+        } 
+    }
+a) 150
+b) 200
+c) Run time error
+d) Compilation error
+
+26. Which of the following statements are incorrect?
+a) default constructor is called at the time of object declaration
+b) Constructor can be parameterized
+c) finalize() method is called when a object goes out of scope and is no longer needed
+d) finalize() method must be declared protected
+
+27. What is the output of this program?
+
+    class area 
+    {
+        int width;
+        int length;
+        int area;
+        void area(int width, int length) 
+        {
+            this.width = width;
+            this.length = length;
+        }
+ 
+    }    
+    class Output 
+    {
+        public static void main(String args[])
+        {
+            area obj = new area();
+            obj.area(5 , 6);
+            System.out.println(obj.length + " " + obj.width);        
+        } 
+    }
+a) 0 0
+b) 5 6
+c) 6 5
+d) 5 5

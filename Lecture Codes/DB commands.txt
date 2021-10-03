@@ -1,0 +1,5 @@
+create database db_name
+show databases;
+use db_name
+create table emp(id int, name varchar(20),email varchar(30));
+insert into emp values(203,'tejas','tez@tez.com');
